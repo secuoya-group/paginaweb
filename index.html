@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Di Buffala | Diseño de interiores</title>
+
+  <title>Secuoya Group | Transformación digital con Automatización e IA</title>
+  <meta name="description" content="Secuoya Group asesora a empresas en transformación digital integrando automatización e inteligencia artificial: agentes IA, n8n, Power Automate y proyectos de alto impacto.">
 
   <!-- Bootstrap 3 -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" crossorigin="anonymous">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato|Poppins" rel="stylesheet">
@@ -18,17 +20,101 @@
   <!-- n8n chat (CSS) -->
   <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 
-  <!-- Estilo para resaltar "Contacto" -->
   <style>
+    /* Mantén tu estilo base */
+    body { font-family: Lato, Arial, sans-serif; }
+
+    /* Contacto resaltado */
     .navbar__navigation > li.nav-contacto > a{
-      background: #ff6a00;          /* cambia el color si quieres */
+      background: #ff6a00;
       color: #fff !important;
       border-radius: 6px;
       padding: 10px 14px;
       margin-top: 4px;
     }
-    .navbar__navigation > li.nav-contacto > a:hover{
-      opacity: .9;
+    .navbar__navigation > li.nav-contacto > a:hover{ opacity: .9; }
+
+    /* Hero rework */
+    .hero {
+      padding: 70px 15px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero .hero-card{
+      background: rgba(255,255,255,.92);
+      border-radius: 14px;
+      padding: 26px;
+      box-shadow: 0 8px 30px rgba(0,0,0,.08);
+    }
+    .hero h1{
+      font-family: Poppins, Arial, sans-serif;
+      font-weight: 700;
+      margin-top: 0;
+      line-height: 1.15;
+    }
+    .hero p{ font-size: 16px; color: #444; }
+    .hero .pill{
+      display:inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background:#f2f2f2;
+      color:#333;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    .hero .cta-row{ margin-top: 14px; }
+    .hero .cta-row .btn{ margin-right: 10px; margin-bottom: 10px; }
+
+    /* Placeholders de imagen (tú los reemplazas con <img>) */
+    .hero-visual{
+      min-height: 280px;
+      border-radius: 14px;
+      background: #f7f7f7;
+      border: 1px solid #eee;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#888;
+      text-align:center;
+      padding: 15px;
+    }
+
+    /* Secciones */
+    .section {
+      padding: 55px 0;
+    }
+    .section-title{
+      font-family: Poppins, Arial, sans-serif;
+      font-weight: 700;
+      margin: 0 0 10px;
+    }
+    .section-subtitle{ color:#666; margin-bottom: 25px; }
+
+    /* Cards */
+    .card{
+      background:#fff;
+      border:1px solid #eee;
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 6px 20px rgba(0,0,0,.05);
+      height: 100%;
+    }
+    .card h3{ margin-top: 8px; font-family: Poppins, Arial, sans-serif; font-weight: 600; }
+    .card p{ color:#555; }
+
+    .logo-strip img{
+      max-height: 26px;
+      margin: 8px 14px 0 0;
+      opacity: .85;
+    }
+
+    /* Footer links */
+    .footer-links a{ text-decoration: underline; }
+
+    /* Ajustes responsivos */
+    @media (max-width: 767px){
+      .hero{ padding: 45px 15px; }
+      .hero-visual{ margin-top: 18px; }
     }
   </style>
 </head>
@@ -49,7 +135,7 @@
         </button>
 
         <a class="navbar-brand" href="#inicio">
-          <img src="assets/img/logo.png" alt="Logo Di Buffala">
+          <img src="assets/img/logo.png" alt="Logo Secuoya Group">
         </a>
       </div>
 
@@ -60,12 +146,10 @@
           <li><a href="#servicios">Servicio y productos</a></li>
           <li><a href="#nosotros">Nosotros</a></li>
 
-          <!-- ✅ NUEVA PESTAÑA -->
           <li><a href="n8n-oauth.html">n8n-oauth</a></li>
 
           <li class="nav-contacto"><a href="#contacto">Contacto</a></li>
 
-          <!-- ✅ AHORA VAN A OTRAS PÁGINAS -->
           <li><a href="privacidad.html">Políticas de privacidad</a></li>
           <li><a href="terminos.html">Condiciones del servicio</a></li>
         </ul>
@@ -74,163 +158,249 @@
     </div>
   </nav>
 
-  <!-- Header / Inicio -->
-  <header id="inicio" class="container-fluid header_di-buffala">
-    <h1>Lorem Ipsum</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <a class="btn button_di-buffala" href="#servicios">Conoce Más</a>
+  <!-- HERO / INICIO -->
+  <header id="inicio" class="container-fluid hero">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-7">
+          <div class="hero-card">
+            <span class="pill">Secuoya Group · Automatización + IA</span>
+
+            <h1>Transformación digital práctica para aumentar la productividad</h1>
+
+            <p>
+              Ayudamos a empresas a dar el salto a la transformación digital integrando
+              <strong>automatización</strong> e <strong>inteligencia artificial</strong> en sus procesos.
+              Diseñamos estrategias, implementamos soluciones y ejecutamos proyectos para lograr resultados medibles.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn button_di-buffala" href="#contacto">Agendar una llamada</a>
+              <a class="btn btn-default" href="#servicios">Ver servicios</a>
+              <a class="btn btn-default" href="n8n-oauth.html">Acceso n8n-oauth</a>
+            </div>
+
+            <div class="logo-strip muted" style="margin-top:10px;">
+              <small>Trabajamos con herramientas como:</small><br>
+              <!-- Si quieres, reemplaza por logos reales -->
+              <small class="muted">n8n · Power Automate · Agentes IA · Integraciones · Analítica</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <!-- Placeholder para imagen del hero -->
+          <div class="hero-visual">
+            <div>
+              <strong>Imagen recomendada:</strong><br>
+              “Equipo trabajando + pantallas” o “flujo de automatización/IA”<br>
+              <small>(ponla luego como <code>&lt;img&gt;</code> aquí)</small>
+            </div>
+          </div>
+          <!-- Ejemplo cuando tengas imagen:
+          <img src="assets/img/hero-automation.jpg" alt="Automatización e IA para empresas" class="img-responsive" style="border-radius:14px;">
+          -->
+        </div>
+
+      </div>
+    </div>
   </header>
 
-  <!-- Blog (opcional) -->
-  <section class="container-fluid blog">
-    <div class="row">
-      <div class="blog__inner col-md-6">
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices accumsan ornare. Phasellus tristique ullamcorper luctus.</p>
-        <a class="btn button_di-buffala" href="#servicios">Ver más</a>
-      </div>
-      <div class="blog__inner blog__inner_background col-md-6"></div>
-    </div>
-  </section>
-
-  <!-- Features / Características -->
-  <section id="caracteristicas" class="container-fluid features">
-    <h1>Hola que tal</h1>
-    <h2>Lorem ipsum dolor sit</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices accumsan ornare. Phasellus tristique ullamcorper luctus. Nunc varius ullamcorper felis. Nulla nibh ipsum, rutrum.</p>
-
-    <div class="row">
-      <div class="col-lg-4 col-md-6 ">
-        <div class="features__inner">
-          <div class="features__inner-icon"><i class="fas fa-exchange-alt"></i></div>
-          <h3>Lorem Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices accumsan ornare. Phasellus tristique</p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="features__inner">
-          <div class="features__inner-icon"><i class="far fa-smile"></i></div>
-          <h3>Lorem Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices accumsan ornare. Phasellus tristique</p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="features__inner">
-          <div class="features__inner-icon"><i class="fas fa-suitcase"></i></div>
-          <h3>Lorem Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices accumsan ornare. Phasellus tristique</p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="features__inner">
-          <div class="features__inner-icon"><i class="fas fa-user"></i></div>
-          <h3>Lorem Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices accumsan ornare. Phasellus tristique</p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="features__inner">
-          <div class="features__inner-icon"><i class="fas fa-recycle"></i></div>
-          <h3>Lorem Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices accumsan ornare. Phasellus tristique</p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="features__inner">
-          <div class="features__inner-icon"><i class="fa far fa-thumbs-up"></i></div>
-          <h3>Lorem Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices accumsan ornare. Phasellus tristique</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Video -->
-  <section class="embed-responsive embed-responsive-16by9 video">
-    <iframe class="embed-responsive-item"
-            src="https://www.youtube.com/embed/ZGn8kSV9gAA?rel=0&amp;controls=0&amp;showinfo=0"
-            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-    <div class="video__inner">
-      <h2>Nuestros Exitos</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices accumsan ornare. Phasellus tristique ullamcorper luctus. Nunc varius ullamcorper felis. Nulla nibh ipsum, rutrum.</p>
-    </div>
-  </section>
-
-  <!-- Servicio y productos -->
-  <section id="servicios" class="container-fluid portfolio">
-    <h2>Servicio y productos</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices accumsan ornare. Phasellus tristique ullamcorper luctus. Nunc varius ullamcorper felis. Nulla nibh ipsum, rutrum.</p>
-    <hr>
-
-    <div class="row">
-      <div class="portfolio__inner col-md-6">
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices accumsan ornare. Phasellus tristique ullamcorper luctus.</p>
-        <a class="btn button_di-buffala" href="#contacto">Solicitar info</a>
-      </div>
-      <div class="portfolio__inner portfolio__inner__image-top col-md-6"></div>
-
-      <div class="portfolio__inner portfolio__inner__image-middle col-md-6"></div>
-      <div class="portfolio__inner col-md-6">
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices accumsan ornare. Phasellus tristique ullamcorper luctus.</p>
-        <a class="btn button_di-buffala" href="#contacto">Cotizar</a>
-      </div>
-
-      <div class="portfolio__inner col-md-6">
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices accumsan ornare. Phasellus tristique ullamcorper luctus.</p>
-        <a class="btn button_di-buffala" href="#contacto">Ver catálogo</a>
-      </div>
-      <div class="portfolio__inner portfolio__inner__image-bottom col-md-6"></div>
-    </div>
-  </section>
-
-  <!-- Nosotros -->
-  <section id="nosotros" class="container-fluid">
+  <!-- CARACTERÍSTICAS -->
+  <section id="caracteristicas" class="container-fluid section">
     <div class="container">
-      <h2>Nosotros</h2>
-      <p>
-        Aquí pones tu historia / propuesta de valor. Este bloque es estático y sirve para que el menú “Nosotros”
-        baje a esta parte.
+      <h2 class="section-title">Características</h2>
+      <p class="section-subtitle">
+        Enfoque práctico: identificamos oportunidades, diseñamos el flujo, implementamos y medimos.
       </p>
+
+      <div class="row">
+        <div class="col-sm-6 col-md-4" style="margin-bottom:15px;">
+          <div class="card">
+            <h3>Diagnóstico de procesos</h3>
+            <p>Mapeamos procesos y detectamos “cuellos de botella” con impacto directo en productividad y tiempos.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4" style="margin-bottom:15px;">
+          <div class="card">
+            <h3>Automatización de punta a punta</h3>
+            <p>Diseñamos automatizaciones en <strong>n8n</strong> y <strong>Power Automate</strong> integrando sistemas, datos y aprobaciones.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4" style="margin-bottom:15px;">
+          <div class="card">
+            <h3>Agentes de IA y copilotos</h3>
+            <p>Construimos agentes que consultan información, asisten al equipo, generan reportes y ejecutan acciones con control.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4" style="margin-bottom:15px;">
+          <div class="card">
+            <h3>Gobernanza y seguridad</h3>
+            <p>Buenas prácticas: control de accesos, trazabilidad, manejo de credenciales y cumplimiento básico.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4" style="margin-bottom:15px;">
+          <div class="card">
+            <h3>Capacitación y adopción</h3>
+            <p>Entrenamos equipos para que la solución se use de verdad: guías, playbooks y sesiones por rol.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4" style="margin-bottom:15px;">
+          <div class="card">
+            <h3>Resultados medibles</h3>
+            <p>Definimos indicadores (tiempo ahorrado, errores, productividad) y dejamos un plan de mejora continua.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Contacto -->
-  <section id="contacto" class="container-fluid">
+  <!-- SERVICIOS Y PRODUCTOS -->
+  <section id="servicios" class="container-fluid section" style="background:#fafafa;">
     <div class="container">
-      <h2>Contacto</h2>
-      <p>Escríbenos y te respondemos lo antes posible.</p>
+      <h2 class="section-title">Servicio y productos</h2>
+      <p class="section-subtitle">
+        Elige el modelo según tu necesidad: consultoría, implementación o proyecto completo.
+      </p>
 
-      <form>
-        <div class="form-group">
-          <label for="nombre">Nombre</label>
-          <input id="nombre" class="form-control" type="text" placeholder="Tu nombre">
+      <div class="row">
+        <div class="col-md-4" style="margin-bottom:15px;">
+          <div class="card">
+            <h3>Consultoría de transformación digital</h3>
+            <p>Hoja de ruta, priorización, quick wins y plan de implementación por fases.</p>
+            <a class="btn button_di-buffala" href="#contacto">Solicitar diagnóstico</a>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="email">Correo</label>
-          <input id="email" class="form-control" type="email" placeholder="tu@email.com">
+
+        <div class="col-md-4" style="margin-bottom:15px;">
+          <div class="card">
+            <h3>Automatizaciones (n8n / Power Automate)</h3>
+            <p>Diseño e implementación de flujos, integraciones, alertas, reportes y automatización operativa.</p>
+            <a class="btn button_di-buffala" href="#contacto">Cotizar automatización</a>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" class="form-control" rows="4" placeholder="¿En qué te ayudamos?"></textarea>
+
+        <div class="col-md-4" style="margin-bottom:15px;">
+          <div class="card">
+            <h3>Agentes de IA y herramientas</h3>
+            <p>Chatbots internos, asistentes por área, RAG con documentos y automatización de tareas cognitivas.</p>
+            <a class="btn button_di-buffala" href="#contacto">Ver propuesta IA</a>
+          </div>
         </div>
-        <button type="button" class="btn button_di-buffala">Enviar</button>
-      </form>
+      </div>
+
+      <div class="row" style="margin-top:10px;">
+        <div class="col-md-12">
+          <div class="card">
+            <h3>Proyectos end-to-end</h3>
+            <p>
+              Si necesitas que lo hagamos todo: levantamiento, diseño, desarrollo, despliegue, capacitación y soporte.
+              Ideal para iniciativas con impacto transversal.
+            </p>
+            <a class="btn btn-default" href="#nosotros">Conocer metodología</a>
+            <a class="btn button_di-buffala" href="#contacto">Hablemos del proyecto</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- Footer (✅ con links legales + n8n-oauth) -->
+  <!-- NOSOTROS -->
+  <section id="nosotros" class="container-fluid section">
+    <div class="container">
+      <h2 class="section-title">Nosotros</h2>
+      <p class="section-subtitle">
+        Secuoya Group: consultoría e implementación de automatización e IA con foco en productividad.
+      </p>
+
+      <div class="row">
+        <div class="col-md-7">
+          <div class="card">
+            <h3>Cómo trabajamos</h3>
+            <p><strong>1) Descubrimiento:</strong> entendemos el proceso, datos y objetivos.</p>
+            <p><strong>2) Diseño:</strong> proponemos flujos, arquitectura y plan de adopción.</p>
+            <p><strong>3) Implementación:</strong> construimos automatizaciones/agentes y conectamos sistemas.</p>
+            <p><strong>4) Medición:</strong> validamos resultados, KPIs y mejoras.</p>
+            <p class="muted">
+              Si tu equipo necesita acceso al servidor, contamos con una página dedicada:
+              <a href="n8n-oauth.html"><strong>n8n-oauth</strong></a>.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <!-- Placeholder para imagen de equipo -->
+          <div class="hero-visual" style="min-height:220px;">
+            <div>
+              <strong>Imagen recomendada:</strong><br>
+              “Foto de equipo / consultoría” o “workshop con clientes”<br>
+              <small>(ponla luego aquí)</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="container-fluid section" style="background:#fafafa;">
+    <div class="container">
+      <h2 class="section-title">Contacto</h2>
+      <p class="section-subtitle">Cuéntanos tu reto y te proponemos el mejor camino (quick wins + proyecto).</p>
+
+      <div class="row">
+        <div class="col-md-6" style="margin-bottom:15px;">
+          <div class="card">
+            <h3>Hablemos</h3>
+            <p><strong>Correo:</strong> <a href="mailto:soporte@secuoya.group">soporte@secuoya.group</a></p>
+            <p><strong>Sitio:</strong> <a href="https://www.secuoya.group">www.secuoya.group</a></p>
+            <p class="muted">Si ya tienes acceso y solo necesitas iniciar sesión: <a href="n8n-oauth.html"><strong>n8n-oauth</strong></a>.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6" style="margin-bottom:15px;">
+          <div class="card">
+            <h3>Formulario</h3>
+            <!-- Formulario estático (no envía sin backend). Si luego lo conectas, lo ajustamos. -->
+            <form>
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" class="form-control" type="text" placeholder="Tu nombre">
+              </div>
+              <div class="form-group">
+                <label for="email">Correo</label>
+                <input id="email" class="form-control" type="email" placeholder="tu@email.com">
+              </div>
+              <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" class="form-control" rows="4" placeholder="¿Qué proceso quieres automatizar o mejorar con IA?"></textarea>
+              </div>
+              <button type="button" class="btn button_di-buffala">Enviar</button>
+              <p class="muted" style="margin-top:10px;">
+                Al contactarnos aceptas nuestras
+                <a href="terminos.html"><strong>Condiciones</strong></a> y
+                <a href="privacidad.html"><strong>Política de privacidad</strong></a>.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="footer_di-buffala">
-    <small>
-      DiBufalla 2018. Todos los derechos reservados. |
+    <small class="footer-links">
+      Secuoya Group. Todos los derechos reservados. |
       <a href="n8n-oauth.html">n8n-oauth</a> |
       <a href="privacidad.html">Políticas de privacidad</a> |
       <a href="terminos.html">Condiciones del servicio</a>
@@ -238,13 +408,9 @@
   </footer>
 
   <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.js" crossorigin="anonymous"></script>
   <!-- Bootstrap JS -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <!-- Font Awesome 5 -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-  <!-- Main scripts -->
-  <script src="assets/js/script.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
   <!-- n8n chat -->
   <script type="module">
