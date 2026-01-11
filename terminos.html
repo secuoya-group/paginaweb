@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Condiciones del servicio | Di Buffala</title>
+  <title>Condiciones del servicio | Secuoya n8n-oauth</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" crossorigin="anonymous">
@@ -12,6 +12,9 @@
 
   <style>
     .legal-wrap { padding: 40px 15px; }
+    .legal-meta { color:#666; margin-bottom: 20px; }
+    .legal-toc a { display:block; padding: 4px 0; }
+    .label-soft { display:inline-block; padding:2px 8px; border-radius: 10px; background:#f2f2f2; color:#444; }
   </style>
 </head>
 <body>
@@ -20,25 +23,150 @@
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="index.html">
-          <img src="assets/img/logo.png" alt="Logo Di Buffala">
+          <img src="assets/img/logo.png" alt="Logo Secuoya">
         </a>
       </div>
       <ul class="nav navbar-nav navbar-right navbar__navigation">
         <li><a href="index.html">Volver al inicio</a></li>
+        <li><a href="n8n-oauth.html">n8n-oauth</a></li>
+        <li><a href="privacidad.html">Políticas de privacidad</a></li>
       </ul>
     </div>
   </nav>
 
   <main class="container legal-wrap">
+
     <h1>Condiciones del servicio</h1>
-    <p>Aquí pegas tus términos y condiciones (contenido estático).</p>
+    <p class="legal-meta">
+      <span class="label-soft">Aplicación:</span> Secuoya n8n-oauth &nbsp;·&nbsp;
+      <span class="label-soft">Última actualización:</span> <strong>10 de enero de 2026</strong>
+    </p>
+
+    <p>
+      Estas Condiciones regulan el uso de <strong>Secuoya n8n-oauth</strong> (la “Aplicación”), una interfaz
+      diseñada para que usuarios autorizados puedan <strong>conectarse a un servidor n8n</strong>
+      de forma <strong>rápida, didáctica y guiada</strong>.
+    </p>
+
+    <hr>
+
+    <div class="legal-toc">
+      <h3>Contenido</h3>
+      <a href="#definiciones">1. Definiciones</a>
+      <a href="#proposito">2. Propósito y funcionamiento</a>
+      <a href="#elegibilidad">3. Elegibilidad y acceso</a>
+      <a href="#uso-permitido">4. Uso permitido y restricciones</a>
+      <a href="#oauth">5. Autenticación (OAuth) y permisos</a>
+      <a href="#datos">6. Tratamiento de datos y privacidad</a>
+      <a href="#seguridad">7. Seguridad</a>
+      <a href="#disponibilidad">8. Disponibilidad y soporte</a>
+      <a href="#terminacion">9. Suspensión o terminación</a>
+      <a href="#cambios">10. Cambios a estas condiciones</a>
+      <a href="#contacto">11. Contacto</a>
+    </div>
+
+    <hr>
+
+    <h3 id="definiciones">1. Definiciones</h3>
+    <ul>
+      <li><strong>“Aplicación”</strong>: Secuoya n8n-oauth.</li>
+      <li><strong>“Servicio”</strong>: Acceso guiado y autenticación para ingresar a un servidor n8n autorizado.</li>
+      <li><strong>“Usuario”</strong>: Persona invitada o autorizada para usar el Servicio.</li>
+      <li><strong>“Servidor n8n”</strong>: Instancia de n8n gestionada por Secuoya Group o por un cliente autorizado.</li>
+    </ul>
+
+    <h3 id="proposito">2. Propósito y funcionamiento</h3>
+    <p>
+      La Aplicación existe para <strong>facilitar el inicio de sesión</strong> y la activación del acceso a n8n
+      cuando un Usuario recibe permiso para usar el Servidor n8n. La Aplicación busca que el Usuario entienda
+      qué está autorizando y para qué se usará (transparencia).
+    </p>
+    <p>
+      La Aplicación no se ofrece como un producto masivo; se orienta a <strong>usuarios previamente autorizados</strong>
+      por Secuoya o por el administrador del Servidor n8n.
+    </p>
+
+    <h3 id="elegibilidad">3. Elegibilidad y acceso</h3>
+    <ul>
+      <li>Debes tener autorización expresa para acceder al Servidor n8n.</li>
+      <li>Eres responsable de mantener la confidencialidad de tu cuenta y/o credenciales.</li>
+      <li>Si representas a una organización, declaras que tienes autorización para usar el Servicio en su nombre.</li>
+    </ul>
+
+    <h3 id="uso-permitido">4. Uso permitido y restricciones</h3>
+    <p><strong>Uso permitido</strong>:</p>
+    <ul>
+      <li>Autenticarse para ingresar al Servidor n8n al que fuiste invitado.</li>
+      <li>Consultar información del estado de conexión y guías de uso.</li>
+    </ul>
+
+    <p><strong>Restricciones</strong>:</p>
+    <ul>
+      <li>No usar el Servicio para acceso no autorizado, suplantación o eludir controles de seguridad.</li>
+      <li>No intentar extraer secretos, tokens o credenciales de otros usuarios.</li>
+      <li>No realizar pruebas de carga/ataques (DDoS), escaneo o actividades maliciosas.</li>
+      <li>No usar el Servicio para fines ilegales o que vulneren derechos de terceros.</li>
+    </ul>
+
+    <h3 id="oauth">5. Autenticación (OAuth) y permisos</h3>
+    <p>
+      La Aplicación puede utilizar <strong>OAuth</strong> con proveedores de identidad para autenticarte.
+      Debes revisar la pantalla de consentimiento y aceptar únicamente si estás de acuerdo.
+    </p>
+    <p>
+      El Servicio procurará solicitar <strong>solo los permisos mínimos necesarios</strong> para habilitar el acceso
+      al Servidor n8n (por ejemplo, identidad básica).
+    </p>
+
+    <h3 id="datos">6. Tratamiento de datos y privacidad</h3>
+    <p>
+      El tratamiento de información personal se rige por nuestra
+      <a href="privacidad.html"><strong>Política de Privacidad</strong></a>.
+      La Política explica qué datos se recopilan, para qué se usan, cómo se almacenan, por cuánto tiempo y cómo solicitar eliminación.
+      Las políticas deben ser fáciles de encontrar y estar enlazadas desde el sitio. :contentReference[oaicite:1]{index=1}
+    </p>
+
+    <h3 id="seguridad">7. Seguridad</h3>
+    <p>
+      Implementamos medidas razonables para proteger el Servicio. Aun así, ningún sistema es 100% infalible.
+      Debes notificar inmediatamente cualquier uso no autorizado o incidente.
+    </p>
+
+    <h3 id="disponibilidad">8. Disponibilidad y soporte</h3>
+    <p>
+      El Servicio se ofrece “tal cual” y puede tener ventanas de mantenimiento.
+      Cuando sea posible, informaremos con antelación de cambios relevantes.
+    </p>
+
+    <h3 id="terminacion">9. Suspensión o terminación</h3>
+    <p>
+      Podemos suspender o revocar el acceso si detectamos uso indebido, riesgo de seguridad o incumplimiento de estas Condiciones,
+      o si el administrador del Servidor n8n retira tu autorización.
+    </p>
+
+    <h3 id="cambios">10. Cambios a estas condiciones</h3>
+    <p>
+      Podemos actualizar estas Condiciones. Si el cambio afecta materialmente el uso del Servicio, lo indicaremos en esta página
+      y, cuando corresponda, por un canal de contacto disponible.
+    </p>
+
+    <h3 id="contacto">11. Contacto</h3>
+    <p>
+      <strong>Secuoya Group</strong><br>
+      Correo de soporte: <a href="mailto:soporte@secuoya.group">soporte@secuoya.group</a><br>
+      Sitio: <a href="index.html">www.secuoya.group</a>
+    </p>
 
     <hr>
     <p><a class="btn button_di-buffala" href="index.html">Regresar</a></p>
   </main>
 
   <footer class="footer_di-buffala">
-    <small>DiBufalla 2018. Todos los derechos reservados.</small>
+    <small>
+      Secuoya Group. |
+      <a href="n8n-oauth.html">n8n-oauth</a> |
+      <a href="privacidad.html">Política de privacidad</a>
+    </small>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.js" crossorigin="anonymous"></script>
